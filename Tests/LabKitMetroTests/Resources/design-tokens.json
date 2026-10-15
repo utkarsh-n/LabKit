@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "name": "Metro Station SwiftUI Design System",
+  "edition": "1.0",
+  "baseline": {
+    "appBuild": 14,
+    "platform": "iPhone iOS 27",
+    "swift": "6",
+    "date": "2026-10-12"
+  },
+  "colorEncoding": "RGB doubles are canonical; hex is nearest 8-bit sRGB approximation. Native material pixels depend on OS and backdrop.",
+  "colors": {
+    "surface.canvas": {
+      "rgb": [
+        0.025,
+        0.042,
+        0.058
+      ],
+      "hexApprox": "#060B0F",
+      "colorSpace": "sRGB",
+      "role": "App environment",
+      "basis": "current",
+      "source": "MetroStationTheme.swift:4"
+    },
+    "surface.content": {
+      "rgb": [
+        0.045,
+        0.07,
+        0.087
+      ],
+      "hexApprox": "#0B1216",
+      "colorSpace": "sRGB",
+      "role": "Content panel",
+      "basis": "current",
+      "source": "MetroStationTheme.swift:5"
+    },
+    "surface.gaugeHousing": {
+      "rgb": [
+        0.027,
+        0.041,
+        0.055
+      ],
+      "hexApprox": "#070A0E",
+      "colorSpace": "sRGB",
+      "role": "Opaque gauge housing",
+      "basis": "current",
+      "source": "GaugeView.swift:72"
+    },
+    "surface.metalLight": {
+      "rgb": [
+        0.055,
+        0.073,
+        0.09
+      ],
+      "hexApprox": "#0E1317",
+      "colorSpace": "sRGB",
+      "role": "Upper dial metal",
+      "basis": "current",
+      "source": "GaugeView.swift:84"
+    },
+    "surface.metalDark": {
+      "rgb": [
+        0.021,
+        0.032,
+        0.042
+      ],
+      "hexApprox": "#05080B",
+      "colorSpace": "sRGB",
+      "role": "Lower dial metal",
+      "basis": "current",
+      "source": "GaugeView.swift:84"
+    },
+    "surface.pillLight": {
+      "rgb": [
+        0.055,
+        0.069,
+        0.095
+      ],
+      "hexApprox": "#0E1218",
+      "colorSpace": "sRGB",
+      "role": "Leading enclosure gradient stop",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:97"
+    },
+    "surface.pillDark": {
+      "rgb": [
+        0.014,
+        0.022,
+        0.037
+      ],
+      "hexApprox": "#040609",
+      "colorSpace": "sRGB",
+      "role": "Trailing enclosure gradient stop",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:98"
+    },
+    "surface.plot": {
+      "rgb": [
+        0.022,
+        0.036,
+        0.047
+      ],
+      "hexApprox": "#06090C",
+      "colorSpace": "sRGB",
+      "role": "Large plot inset",
+      "basis": "current",
+      "source": "SignalScopeView.swift:83"
+    },
+    "accent.actionCyan": {
+      "rgb": [
+        0.34,
+        0.93,
+        0.96
+      ],
+      "hexApprox": "#57EDF5",
+      "colorSpace": "sRGB",
+      "role": "General actions and selection",
+      "basis": "current",
+      "source": "MetroStationTheme.swift:6"
+    },
+    "accent.actionAmber": {
+      "rgb": [
+        1,
+        0.74,
+        0.37
+      ],
+      "hexApprox": "#FFBD5E",
+      "colorSpace": "sRGB",
+      "role": "Running primary action and emphasis",
+      "basis": "current",
+      "source": "MetroStationTheme.swift:7"
+    },
+    "accent.instrumentCyan": {
+      "rgb": [
+        0.32,
+        0.91,
+        0.96
+      ],
+      "hexApprox": "#52E8F5",
+      "colorSpace": "sRGB",
+      "role": "Dial, crown and large waveform ink",
+      "basis": "current",
+      "source": "GaugeView.swift:32"
+    },
+    "accent.instrumentAmber": {
+      "rgb": [
+        1,
+        0.72,
+        0.31
+      ],
+      "hexApprox": "#FFB84F",
+      "colorSpace": "sRGB",
+      "role": "Dial, crown and large carrier ink",
+      "basis": "current",
+      "source": "GaugeView.swift:33"
+    },
+    "text.display": {
+      "rgb": [
+        0.91,
+        0.95,
+        0.97
+      ],
+      "hexApprox": "#E8F2F7",
+      "colorSpace": "sRGB",
+      "role": "Primary numeric ink",
+      "basis": "current",
+      "source": "GaugeView.swift:122"
+    },
+    "text.secondary": {
+      "rgb": [
+        0.6,
+        0.69,
+        0.73
+      ],
+      "hexApprox": "#99B0BA",
+      "colorSpace": "sRGB",
+      "role": "Secondary engineering text",
+      "basis": "current",
+      "source": "MetroStationTheme.swift:8"
+    },
+    "signal.wavePrimary": {
+      "rgb": [
+        0.31,
+        0.86,
+        1
+      ],
+      "hexApprox": "#4FDBFF",
+      "colorSpace": "sRGB",
+      "role": "Compact waveform ink",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:23"
+    },
+    "signal.waveSecondary": {
+      "rgb": [
+        0.21,
+        0.4,
+        1
+      ],
+      "hexApprox": "#3666FF",
+      "colorSpace": "sRGB",
+      "role": "Compact waveform depth",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:28"
+    },
+    "signal.spectrumPrimary": {
+      "rgb": [
+        0.76,
+        0.57,
+        1
+      ],
+      "hexApprox": "#C291FF",
+      "colorSpace": "sRGB",
+      "role": "Compact spectrum ink",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:24"
+    },
+    "signal.spectrumSecondary": {
+      "rgb": [
+        0.96,
+        0.36,
+        0.84
+      ],
+      "hexApprox": "#F55CD6",
+      "colorSpace": "sRGB",
+      "role": "Compact spectrum depth",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:29"
+    },
+    "signal.carrier": {
+      "rgb": [
+        1,
+        0.73,
+        0.34
+      ],
+      "hexApprox": "#FFBA57",
+      "colorSpace": "sRGB",
+      "role": "Compact carrier marker",
+      "basis": "current",
+      "source": "MetroStationPillView.swift:20"
+    },
+    "metal.crownBase": {
+      "rgb": [
+        0.12,
+        0.15,
+        0.17
+      ],
+      "hexApprox": "#1F262B",
+      "colorSpace": "sRGB",
+      "role": "Crown metal base",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    },
+    "metal.crownRimLight": {
+      "rgb": [
+        0.49,
+        0.57,
+        0.61
+      ],
+      "hexApprox": "#7D919C",
+      "colorSpace": "sRGB",
+      "role": "Upper crown rim",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    },
+    "metal.crownRimDark": {
+      "rgb": [
+        0.1,
+        0.13,
+        0.15
+      ],
+      "hexApprox": "#1A2126",
+      "colorSpace": "sRGB",
+      "role": "Lower crown rim",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    },
+    "metal.crownRimMid": {
+      "rgb": [
+        0.32,
+        0.39,
+        0.43
+      ],
+      "hexApprox": "#52636E",
+      "colorSpace": "sRGB",
+      "role": "Crown rim midpoint",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    },
+    "metal.crownFaceLight": {
+      "rgb": [
+        0.27,
+        0.33,
+        0.37
+      ],
+      "hexApprox": "#45545E",
+      "colorSpace": "sRGB",
+      "role": "Crown face upper",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    },
+    "metal.crownFaceDark": {
+      "rgb": [
+        0.08,
+        0.11,
+        0.13
+      ],
+      "hexApprox": "#141C21",
+      "colorSpace": "sRGB",
+      "role": "Crown face lower",
+      "basis": "current",
+      "source": "TempoCrownsView.swift"
+    }
+  },
+  "recommendedSpacing": {
+    "basis": "recommended consolidation",
+    "unit": "pt",
+    "values": [
+      4,
+      8,
+      12,
+      16,
+      24,
+      32
+    ]
+  },
+  "componentSpacing": {
+    "basis": "current",
+    "micro": [
+      3,
+      5,
+      6,
+      7,
+      10
+    ],
+    "screenInset": 12,
+    "headerInset": 24,
+    "panelInset": 16,
+    "mainStack": 12,
+    "landscapeColumns": 24,
+    "transportInset": 22,
+    "transportBottom": 12
+  },
+  "radii": {
+    "unit": "pt",
+    "basis": "current",
+    "contentPanel": 22,
+    "plot": 10,
+    "beatTile": 8,
+    "pill": "capsule",
+    "control": "circle or capsule"
+  },
+  "strokes": {
+    "unit": "pt",
+    "basis": "current",
+    "panel": 1,
+    "plot": 0.6,
+    "grid": 0.5,
+    "pill": 0.8,
+    "housingRim": 1.4,
+    "glassRimLight": 0.9
+  },
+  "opacity": {
+    "basis": "current",
+    "panelFill": 0.85,
+    "panelBorder": 0.09,
+    "grid": 0.025,
+    "environmentWash": 0.085,
+    "lensComposite": 0.48,
+    "lensCompositeReduceTransparency": 1,
+    "rimLightPeak": 0.085,
+    "crownGlassTint": 0.08,
+    "pillPrimaryBorder": 0.36,
+    "pillPrimaryBorderIncreasedContrast": 0.7,
+    "pillSecondaryBorder": 0.38
+  },
+  "typography": {
+    "appTitle": {
+      "basis": "current",
+      "sizePt": 27,
+      "weight": "semibold",
+      "design": "rounded",
+      "minScale": 0.75
+    },
+    "appSubtitle": {
+      "basis": "current",
+      "sizePt": 9,
+      "weight": "medium",
+      "design": "monospaced",
+      "trackingPt": 2.6
+    },
+    "heroValue": {
+      "basis": "current",
+      "size": "0.23 * gaugeDiameterPt",
+      "weight": "light",
+      "design": "rounded",
+      "monospacedDigits": true,
+      "minScale": 0.7
+    },
+    "heroUnit": {
+      "basis": "current",
+      "baseSizePt": 11,
+      "scaledRelativeTo": "caption2",
+      "design": "monospaced",
+      "weight": "medium",
+      "trackingPt": 2.2
+    },
+    "humanMeaning": {
+      "basis": "current",
+      "textStyle": "subheadline",
+      "design": "serif",
+      "weight": "medium",
+      "italic": true
+    },
+    "stepperValue": {
+      "basis": "current",
+      "sizePt": 18,
+      "weight": "medium",
+      "design": "rounded",
+      "monospacedDigits": true
+    },
+    "stepperLabel": {
+      "basis": "current",
+      "sizePt": 10,
+      "design": "monospaced",
+      "weight": "medium",
+      "trackingPt": 1.5
+    },
+    "pillTitle": {
+      "basis": "current",
+      "baseSizePt": 10,
+      "scaledRelativeTo": "caption2",
+      "design": "monospaced",
+      "weight": "semibold"
+    },
+    "pillAxis": {
+      "basis": "current",
+      "baseSizePt": 9,
+      "scaledRelativeTo": "caption2",
+      "design": "monospaced",
+      "weight": "medium"
+    },
+    "reuseCaptionMinimum": {
+      "basis": "recommended",
+      "baseSizePt": 11,
+      "scaledRelativeTo": "caption2",
+      "note": "Keep smaller calibration supplementary."
+    }
+  },
+  "layout": {
+    "basis": "current",
+    "unit": "pt",
+    "portraitContentMax": 540,
+    "clusterMax": 490,
+    "gaugeMax": 360,
+    "pillWidthCompact": 30,
+    "pillWidthRegular": 36,
+    "pillWidthBreakpoint": 350,
+    "clusterGap": 6,
+    "pillHeightMax": 218,
+    "pillHeightRatio": 0.66,
+    "controlRowMax": 380,
+    "stepperMinHeight": 48,
+    "secondaryTargetMin": 44,
+    "crownDiameter": 62,
+    "transportLabelMinHeight": 58,
+    "bottomContentReserve": 98,
+    "landscapeInstrumentWidthRatio": 0.47
+  },
+  "gauge": {
+    "basis": "current",
+    "calibrationRadiusRatio": 0.445,
+    "metalInsetRatio": 0.038,
+    "lensDiameterRatio": 0.76,
+    "readoutYRatio": 0.52,
+    "unitsYRatio": 0.665,
+    "meaningYRatio": 0.745,
+    "meaningYAccessibilityRatio": 0.79,
+    "phaseYRatio": 0.835,
+    "readoutWidthRatio": 0.64,
+    "tickerPivotYRatio": 0.38,
+    "tickerLengthRatio": 0.235,
+    "tickerAmplitudeDegrees": 26,
+    "tickerCycleBeats": 2
+  },
+  "motion": {
+    "basis": "current tuning; cadence is requested",
+    "gaugeHz": 60,
+    "telemetryHz": 30,
+    "reduceMotionHz": 10,
+    "gravitySampleHz": 30,
+    "gravityGain": 1.7,
+    "gravityLowPassAlpha": 0.18,
+    "gravityVisualAxes": [
+      "device gravity.x",
+      "device gravity.z"
+    ],
+    "enhance": "2g/(1+|g|^2) after radial unit-disk clamp",
+    "detentMaxHz": 20,
+    "fineDetentDegrees": 8,
+    "coarseDetentDegrees": 20,
+    "reversalHysteresisRatio": 0.18
+  },
+  "optics": {
+    "basis": "current artistic cue",
+    "shiftDiameterRatio": 0.025,
+    "shiftCapPt": 9.5,
+    "achromaticRimStart": 0.82,
+    "curvature": 0.32,
+    "totalChannelSplitAt322Pt": 1,
+    "totalChannelSplitCapPt": 1.2,
+    "channelOffsetFractionOfTotal": 0.5,
+    "chromaticInnerStart": 0.52,
+    "chromaticPeakRadius": 0.82,
+    "chromaticAngularWeight": "sin(theta*2)^2",
+    "maxSampleOffset": "maximumShift + maximumChannelSplit/2",
+    "rimRadiusRatio": 0.985,
+    "rimArcDegrees": 76,
+    "rimAngleDegrees": "-90 + 70*enhancedTilt.x + 20*enhancedTilt.y",
+    "rimOpacityConstant": true,
+    "faceHighlightFill": false,
+    "disableCustomEffects": [
+      "Reduce Motion",
+      "Reduce Transparency",
+      "inactive scene",
+      "motion inactive"
+    ]
+  },
+  "hapticDetents": {
+    "basis": "current Metro Station tuning",
+    "fineUp": {
+      "intensity": 0.78,
+      "sharpness": 0.95
+    },
+    "fineDown": {
+      "intensity": 0.82,
+      "sharpness": 0.2
+    },
+    "semanticUp": {
+      "intensity": 1,
+      "sharpness": 0.6
+    },
+    "semanticDown": {
+      "intensity": 1,
+      "sharpness": 0.05
+    }
+  },
+  "contract": {
+    "readoutTransforms": false,
+    "controlTransformsFromSensor": false,
+    "pillOutlineBeatAnimation": false,
+    "globalBeatOpacityAnimation": false,
+    "controlTouchOwnsWholeSequence": true,
+    "nativeHoldRepeat": true,
+    "wholeIntegerValuesRenderWithoutDecimals": true
+  },
+  "portability": {
+    "starterMinimumIOS": 26,
+    "sourceTargetIOS": 27,
+    "lightTheme": "Requires a separate palette and validation",
+    "landscapeTilt": "Host must map sensor axes to interface orientation",
+    "wholeBPM": "Domain-specific; retain legitimate precision for other units"
+  }
+}

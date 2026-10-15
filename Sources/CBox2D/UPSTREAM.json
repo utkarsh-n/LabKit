@@ -1,0 +1,55 @@
+{
+  "name": "Box2D",
+  "version": "3.1.1",
+  "upstream": "https://github.com/erincatto/box2d",
+  "tag": "v3.1.1",
+  "tagType": "lightweight",
+  "tagObject": null,
+  "commit": "8c661469c9507d3ad6fbd2fea3f1aa71669c2fe3",
+  "commitDate": "2025-06-03T17:50:24-07:00",
+  "tree": "f411f5197e73db138a249525ad3f1315816a956b",
+  "archiveURL": "https://github.com/erincatto/box2d/archive/refs/tags/v3.1.1.tar.gz",
+  "archiveSHA256": "fb6ef914b50f4312d7d921a600eabc12318bb3c55a0b8c0b90608fa4488ef2e4",
+  "archiveBytes": 780115,
+  "archiveCommitId": "8c661469c9507d3ad6fbd2fea3f1aa71669c2fe3",
+  "license": "MIT",
+  "licenseFile": "LICENSE",
+  "licenseSHA256": "68a3e676d7e94093b102d5cba0d4e04af812040d6f230c3db67a6664574e43d2",
+  "copyright": "Copyright (c) 2022 Erin Catto",
+  "vendoredRoot": "Sources/CBox2D",
+  "vendoredPaths": ["LICENSE", "include/box2d/*.h", "src/*.c", "src/*.h", "src/CMakeLists.txt", "src/box2d.natvis"],
+  "fileCounts": {
+    "include/box2d/*.h": 6,
+    "src/*.c": 35,
+    "src/*.h": 22,
+    "src/other": 2
+  },
+  "vendoredManifestSHA256": "47441ae45a0a354fef117e0684bc768b236faffc1ce9e3c273a99bad5b30f2eb",
+  "vendoredManifestCommand": "cd Sources/CBox2D && find include/box2d src LICENSE -type f | sort | xargs shasum -a 256 | shasum -a 256",
+  "compiledManifestSHA256": "5f8e10b1017e90701e9cba7c639169cd4277844db244de0d4a89b0f15943d479",
+  "compiledManifestCommand": "cd Sources/CBox2D && find include/box2d src LICENSE -type f \\( -name '*.c' -o -name '*.h' -o -name LICENSE \\) | sort | xargs shasum -a 256 | shasum -a 256",
+  "compiledSources": "src/*.c: exactly upstream's BOX2D_SOURCE_FILES (src/CMakeLists.txt); public headers exactly BOX2D_API_FILES",
+  "addedFiles": ["include/module.modulemap", "UPSTREAM.md", "UPSTREAM.json"],
+  "modifiedUpstreamFiles": [],
+  "vendoredNotCompiled": ["src/CMakeLists.txt", "src/box2d.natvis"],
+  "notVendored": [
+    ".clang-format", ".gitattributes", ".github", ".gitignore", "CMakeLists.txt", "README.md", "benchmark",
+    "build.sh", "build_emscripten.sh", "create_sln.bat", "deploy_docs.sh", "docs", "extern", "samples", "shared", "test"
+  ],
+  "buildSettings": {
+    "target": "CBox2D (never a product; apps use LabKitRigid, which has `internal import CBox2D`)",
+    "cLanguageStandard": "c17 (upstream: C_STANDARD 17, C_EXTENSIONS YES; both gnu17 and c17 compile warning-free)",
+    "defines": { "NDEBUG": "release only (SwiftPM never defines it; without it B2_ASSERT stays on)" },
+    "flags": ["-ffp-contract=off (upstream CMakeLists.txt, determinism)", "-O2 (all configurations; Box2D at -O0 is 10-21x slower)"],
+    "simd": "NEON on arm64 (device and arm64 simulator), SSE2 on x86_64 simulator; chosen by src/core.h, no flags",
+    "notDefined": ["BOX2D_VALIDATE", "BOX2D_DISABLE_SIMD", "BOX2D_AVX2", "B2_ENABLE_ASSERT"],
+    "lengthUnitsPerMeter": "0.1, set once per process by LabKitRigid (RigidUnits) before the first world"
+  },
+  "verification": {
+    "date": "2026-10-03",
+    "gitCheckout": "diff -r against a clone of tag v3.1.1 (HEAD 8c661469, tree f411f519): src, include/box2d and LICENSE identical",
+    "archive": "diff -r against the extracted GitHub tarball (SHA-256 above; git get-tar-commit-id = commit): identical",
+    "sourceList": "src/*.c + src/*.h (57 files) == BOX2D_SOURCE_FILES in upstream src/CMakeLists.txt"
+  },
+  "retrieved": "2026-10-03"
+}

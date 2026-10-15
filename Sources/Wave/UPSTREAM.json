@@ -1,0 +1,16 @@
+{
+  "name": "Wave",
+  "upstream": "https://github.com/jtrivedi/Wave",
+  "author": "Janum Trivedi",
+  "licence": "MIT",
+  "tag": "0.3.4",
+  "tagType": "lightweight",
+  "commit": "72f4688be3cfd3b56fcc76f51bf2a59dfece017e",
+  "tree": "c965b7f45fbd6807bbca083b2dea414bf33f7c9b",
+  "vendored": ["Sources/Wave/** (verbatim)", "Tests/WaveTests/** (verbatim)", "LICENSE.md"],
+  "sourcesManifestSHA256": "489900d4d9c52a96240aa504025f307a9f3fa3ddabdf2ac009115f773aa5ea61",
+  "modified": [],
+  "added": ["UPSTREAM.md", "UPSTREAM.json"],
+  "vendoredOn": "2026-10-13",
+  "buildSettings": "Swift 5 language mode (upstream predates Swift 6 strict concurrency)"
+}

@@ -1,0 +1,6 @@
+// LabKit addition (not upstream): exposes only Box2D's public API to Swift. box2d.h includes the other five
+// public headers. Explicit so SwiftPM never guesses an umbrella header. See ../UPSTREAM.md.
+module CBox2D {
+  header "box2d/box2d.h"
+  export *
+}
